@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Point | Vita</title>
+    <style>
+        /* बेस डिझाईन */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        header {
+            background-color: #1a237e; /* पोस्टर सारखा निळा रंग */
+            color: #fff;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            color: #ffca28; /* पिवळा रंग */
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffca28;
+        }
+        
+        /* हिरो सेक्शन */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #1a237e, #3949ab);
+            color: white;
+        }
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #ffca28;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            color: #fff;
+            margin-bottom: 30px;
+        }
+
+        /* कॉमन सेक्शन स्टाईल */
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin: 60px 0 30px;
+            color: #1a237e;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* कार्ड्स (Services) */
+        .card {
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            flex: 1;
+            min-width: 280px;
+            max-width: 350px;
+            border-top: 5px solid #1a237e;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+        }
+        .card h3 {
+            color: #d32f2f;
+            font-size: 1.3rem;
+            border-bottom: 2px solid #ffca28;
+            padding-bottom: 10px;
+        }
+        .card ul {
+            text-align: left;
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+
+        /* कॉन्टॅक्ट सेक्शन */
+        .contact-info {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #fff;
+            margin-bottom: 60px;
+            border-radius: 15px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .contact-info p {
+            font-size: 1.2rem;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+        
+        /* बटणे (WhatsApp & Email) */
+        .btn-group {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .btn {
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: white;
+            transition: 0.3s;
+        }
+        .btn-whatsapp {
+            background-color: #25D366; /* WhatsApp Green */
+        }
+        .btn-whatsapp:hover {
+            background-color: #1ebe57;
+        }
+        .btn-email {
+            background-color: #d44638; /* Gmail Red */
+        }
+        .btn-email:hover {
+            background-color: #b23126;
+        }
+
+        /* फुटर */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1a237e;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- हेडर -->
+    <header>
+        <h1>🎯 SUBMISSION POINT</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- मेन स्क्रीन -->
+    <section class="hero">
+        <h2>SUBMISSION POINT</h2>
+        <p>"सगळे प्रोजेक्ट्स आणि सबमिशन्स आता एकाच ठिकाणी!"</p>
+    </section>
+
+    <!-- सर्व्हिसेस (Services) -->
+    <h2 class="section-title" id="services">आमच्या सेवा (Our Services)</h2>
+    <div class="container">
+        <!-- कार्ड १ -->
+        <div class="card">
+            <h3>💻 इंजिनीअरिंग (डिप्लोमा / डिग्री)</h3>
+            <ul>
+                <li>सर्व ब्रँचचे छोटे (Micro) आणि मोठे (Major) प्रोजेक्ट्स.</li>
+                <li>वेबसाईट आणि ॲप डेव्हलपमेंट (C, C++, Java, Python).</li>
+                <li>तुमच्या कोडिंगमधील चुका (Errors) दुरुस्त करून मिळतील.</li>
+            </ul>
+        </div>
+        
+        <!-- कार्ड २ -->
+        <div class="card">
+            <h3>💊 फार्मसी & 🛠️ ITI स्पेशल</h3>
+            <ul>
+                <li>प्रोफेशनल प्रेझेंटेशन (PPT) आणि ब्लॅक बुक.</li>
+                <li>सर्व ITI ट्रेड्सचे प्रोजेक्ट्स आणि मॉडेल मेकिंग.</li>
+                <li>वर्कशॉप कॅल्क्युलेशन आणि एम्प्लॉयबिलिटी स्किल्स असाइनमेंट.</li>
+            </ul>
+        </div>
+
+        <!-- कार्ड ३ -->
+        <div class="card">
+            <h3>📝 टायपिंग आणि डेटा एंट्री</h3>
+            <ul>
+                <li>कोणत्याही विषयाची असाइनमेंट टायपिंग (मराठी/इंग्रजी).</li>
+                <li>जुन्या प्रश्नपत्रिकांची उत्तरे (Model Answer) टाईप करून मिळतील.</li>
+                <li>कॉलेजच्या नियमानुसार 'पेज सेटअप' करून रिपोर्ट प्रिंटिंग.</li>
+            </ul>
+        </div>
+
+        <!-- कार्ड ४ -->
+        <div class="card">
+            <h3>🎓 खास विद्यार्थ्यांसाठी</h3>
+            <ul>
+                <li>इन्फोसिस (Infosys) आणि गुगल (Google) चे फ्री सर्टिफिकेट कोर्सेस मिळवण्यासाठी मदत.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- संपर्क (Contact) -->
+    <h2 class="section-title" id="contact">संपर्क करा (Get In Touch)</h2>
+    <div class="contact-info">
+        <p>📍 पत्ता: Vita, Maharashtra</p>
+        <p>📞 संपर्क: +91 7972314674</p>
+        <p>✉️ ईमेल: workfrombusness77@gmail.com</p>
+        
+        <p style="color: #d32f2f; margin-top: 20px;">अजून काही मदत किंवा माहितीसाठी कॉल किंवा मेसेज करा!</p>
+        
+        <div class="btn-group">
+            <!-- WhatsApp Link -->
+            <a href="https://wa.me/917972314674?text=Hello%20Submission%20Point,%20I%20need%20help%20with%20a%20project." target="_blank" class="btn btn-whatsapp">
+                💬 Message on WhatsApp
+            </a>
+            <!-- Email Link -->
+            <a href="mailto:workfrombusness77@gmail.com?subject=Project Inquiry" class="btn btn-email">
+                📧 Send an Email
+            </a>
+        </div>
+    </div>
+
+    <!-- फुटर -->
+    <footer>
+        <p>&copy; 2026 Submission Point | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
